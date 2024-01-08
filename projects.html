@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="image">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <label for="menu-toggle" class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+        </nav>
+    </header>
+    <section class="projects" id="projects">
+        <div class="project-container">
+            <h1 class="project-title">PROJECTS</h1>
+            <div class="video-row">
+                <div class="project">
+                    <video controls width="300" height="200">
+                        <source src="minifacultyloadingsystem.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>MINI FACULTY LOADING SYSTEM</h3>
+                </div>
+    
+                <div class="project">
+                    <video controls width="300" height="200">
+                        <source src="miniroombookingsystem.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>MINI ROOM BOOKING SYSTEM</h3>
+                </div>
+    
+                <div class="project">
+                    <video controls width="300" height="200">
+                        <source src="minivehivlerentingsystem.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>MINI VEHICLE RENTING SYSTEM</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
