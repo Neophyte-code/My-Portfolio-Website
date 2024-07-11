@@ -5,10 +5,6 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
-link[rel="icon"] {
-    border-radius: 50%;
-    overflow: hidden;
-}
 body{
     background-color: rgb(5, 5, 5);
 }
@@ -116,6 +112,7 @@ header {
     font-size: 30px;
     background-color: transparent;
     padding-top: 160px;
+    margin-bottom: 100px;
 } 
  .content{
     max-width: 100%;
@@ -223,7 +220,7 @@ header {
 }
 @media only screen and (max-width: 768px) {
     .home {
-        padding-top: 80px;
+        padding: 80px 20px 20px 20px;
         font-size: 20px;
     }
 
@@ -231,7 +228,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-         flex-flow: column-reverse;
+        flex-flow: column-reverse;
     }
 
     .content1 {
@@ -320,14 +317,13 @@ body {
     height: auto;
     border-radius: 15px;
     margin-top: 40px;
-    box-shadow: 10px 10px 5px rgb(47, 179, 223);
+    box-shadow: 0 4px 8px rgb(92, 92, 223);
 }
 
 .aboutpic h1 {
     margin-top: 10px;
     color: white;
 }
-
 .aboutpic p {
     color: #00abf0;
 }
@@ -382,6 +378,7 @@ body {
     flex: 1;
 }
 .about-content h1{
+    font-weight: 600;
     color: #00abf0;
 }
 .about-content p{
@@ -389,6 +386,8 @@ body {
     margin-top: 10px;
     font-size: 20px;
     line-height: 1.5;
+    text-indent: 50px;
+    text-align: justify;
 }
 @media screen and(max-width: 768px){
     .about-page{
@@ -400,6 +399,9 @@ body {
     }
     .about-content{
         border-top-right-radius: 0;
+    }
+    .about-content h1{
+        font-size: larger;
     }
 }
 
@@ -520,6 +522,9 @@ body {
     margin-bottom: 50px;
     color: white;
 }
+.skill-box{
+    margin: 10px;
+}
 .skill-box .title {
     display: block;
     font-size: 18px;
@@ -552,7 +557,7 @@ body {
 }
 
 .skill-per.javascript {
-    width: 10%; /* Adjust the width for JavaScript */
+    width: 50%; /* Adjust the width for JavaScript */
 }
 
 .skill-per.ms-word {
@@ -560,7 +565,7 @@ body {
 }
 
 .skill-per.ms-powerpoint {
-    width: 75%; /* Adjust the width for MS PowerPoint */
+    width: 50%; /* Adjust the width for MS PowerPoint */
 }
 @keyframes progress {
     0% {
@@ -644,8 +649,8 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    /* background-color: gray; */
     border-radius: 8px;
+    padding-top: 80px;
 }
 
 .project-container h1 {
@@ -666,7 +671,6 @@ body {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     border-radius: 8px;
-    /* background-color: white; */
 }
 
 .project video {
@@ -695,6 +699,7 @@ body {
     }
 
     .video-row {
+        padding: 20px;
         flex-direction: column;
         align-items: center;
     }
@@ -844,3 +849,14 @@ textarea {
         width: 100%;
     }
 } 
+footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    background-color: #555;
+    text-align: center;
+    font-weight: 600;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
